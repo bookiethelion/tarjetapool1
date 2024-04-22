@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #F5D04E;
+}
+
+.container {
+    max-width: 380px;
+    min-width: 380px;
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.tarjeta {
+    border: solid 1px #000;
+    background-color: #fff;
+    padding: 22px;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 7px 7px 0 1px #000;
+}
+
+.tarjeta__img, .autor {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tarjeta__img {
+    background-image: url("../assets/florian-olivo-4hbJ-eymZ1o-unsplash.jpg");
+    height: 200px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+}
+
+.tarjeta__texts {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    display: flex;
+    font-size: .8rem;
+    font-weight: 800;
+}
+
+.tarjeta__texts span:nth-child(1) {
+    width: fit-content;
+    background-color: #F5D04E;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.tarjeta__texts span:nth-child(2) {
+    font-weight: 500;
+}
+
+.tarjeta__texts h1 {
+    margin: 15px 0;
+    font-weight: 800;
+}
+
+.tarjeta__texts p {
+    margin-bottom: 15px;
+    font-size: .9rem;
+    color: #888;
+    font-weight: 600;
+    line-height: 23px;
+}
+
+.tarjeta__autor {
+    display: flex;
+    align-items: center;
+}
+
+.autor {
+    background-image: url("../assets/deadpool-2-scaled.webp");
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
